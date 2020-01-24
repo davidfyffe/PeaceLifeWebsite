@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/PeaceLifeWebsite",
   siteMetadata: {
     title: "Peacelife Yoga",
     template_kudos: "Gatsby Starter - Forty V2",
