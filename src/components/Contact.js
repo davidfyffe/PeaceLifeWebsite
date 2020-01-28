@@ -10,15 +10,19 @@ const Contact = (props) => {
     };
 
     let sendMessage = function () {
+        console.log(inputs);
+        if(!inputs.name || !inputs.email || !inputs.messageText) {
+            return
+        }
+
         let data = {
             "name": inputs.name,
             "email": inputs.email,
-            "message": inputs.message
+            "message": inputs.messageText
         };
         axios({
             method: 'post',
             url: 'https://t9cxnrp6n7.execute-api.us-east-1.amazonaws.com/dev/contact',
-            headers: {'Origin': '*'},
             responseType: 'text',
             data: data
         }).then(response => {
@@ -26,6 +30,13 @@ const Contact = (props) => {
         }).catch(error => {
             setInputs(inputs => ({...inputs, ['responseMessage']: error.message}));
         });
+    };
+
+    let clear = function () {
+        setInputs(inputs => ({...inputs, ['messageText']: ""}));
+        setInputs(inputs => ({...inputs, ['name']: ""}));
+        setInputs(inputs => ({...inputs, ['email']: ""}));
+        setInputs(inputs => ({...inputs, ['responseMessage']: ""}));
     };
 
     return <section id="contact">
@@ -41,13 +52,13 @@ const Contact = (props) => {
                         <input type="text" name="email" id="email" value={inputs.email} onChange={handleInputChange} required />
                     </div>
                     <div className="field">
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" rows="6" value={inputs.message} onChange={handleInputChange} required />
+                        <label htmlFor="messageText">Message</label>
+                        <textarea name="messageText" id="messageText" rows="6" value={inputs.messageText} onChange={handleInputChange} required />
                     </div>
                     <ul className="actions">
                         <li><input type="submit" value="Send Message" className="special"
                                    onClick={() => sendMessage()}/></li>
-                        <li><input type="reset" value="Clear"/></li>
+                        <li><input type="reset" value="Clear" onClick={() => clear()}/></li>
                     </ul>
                     <p>{inputs.responseMessage}</p>
                 </form>
