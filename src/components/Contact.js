@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from "axios/index";
+import BarLoader from "react-spinners/BarLoader";
 
 const Contact = (props) => {
 
@@ -10,6 +11,8 @@ const Contact = (props) => {
     };
 
     let sendMessage = function () {
+        setInputs(inputs => ({...inputs, ['spinnerLoading']: true}));
+        setInputs(inputs => ({...inputs, ['responseMessage']: ""}));
         console.log(inputs);
         if(!inputs.name || !inputs.email || !inputs.messageText) {
             return
@@ -27,8 +30,10 @@ const Contact = (props) => {
             data: data
         }).then(response => {
             setInputs(inputs => ({...inputs, ['responseMessage']: response.data}));
+            setInputs(inputs => ({...inputs, ['spinnerLoading']: false }));
         }).catch(error => {
             setInputs(inputs => ({...inputs, ['responseMessage']: error.message}));
+            setInputs(inputs => ({...inputs, ['spinnerLoading']: false }));
         });
     };
 
@@ -37,6 +42,7 @@ const Contact = (props) => {
         setInputs(inputs => ({...inputs, ['name']: ""}));
         setInputs(inputs => ({...inputs, ['email']: ""}));
         setInputs(inputs => ({...inputs, ['responseMessage']: ""}));
+        setInputs(inputs => ({...inputs, ['spinnerLoading']: false }));
     };
 
     return <section id="contact">
@@ -60,7 +66,15 @@ const Contact = (props) => {
                                    onClick={() => sendMessage()}/></li>
                         <li><input type="reset" value="Clear" onClick={() => clear()}/></li>
                     </ul>
+
+                    <BarLoader
+                        hight="6"
+                        width="150px"
+                        color={"white"}
+                        loading={inputs.spinnerLoading}
+                        />
                     <p>{inputs.responseMessage}</p>
+                    
                 </form>
             </section>
         </div>
