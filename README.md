@@ -18,6 +18,9 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 
 Run `gatsby develop` in the terminal to start the dev site.
 
+## Deploy
+`npm run deploy`
+
 ## CSS Grid
 
 The grid on this site was replaced with a custom version, built using CSS Grid. It's a very simple 12 column grid that is disabled on mobile. To start using the grid, wrap the desired items with `grid-wrapper`. Items inside the `grid-wrapper` use the class `col-` followed by a number, which should add up to 12.
