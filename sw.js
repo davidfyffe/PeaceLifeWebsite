@@ -30,17 +30,17 @@ self.__precacheManifest = [
     "url": "webpack-runtime-dd4652e6a64f9ed37076.js"
   },
   {
-    "url": "commons-5022828182bf72556042.js"
+    "url": "commons-8a0af698474d343399e1.js"
   },
   {
-    "url": "app-ee187e5426ad978afffa.js"
+    "url": "app-fbc9275454460998c249.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-c1d1163580b94df298ae.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "fee216d883b8a36c9526cc08d397905e"
+    "revision": "2201200b7fdaa04ae01f7916507c3d7c"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -141,7 +141,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/PeaceLifeWebsite/app-ee187e5426ad978afffa.js`))) {
+  if (!resources || !(await caches.match(`/PeaceLifeWebsite/app-fbc9275454460998c249.js`))) {
     return await fetch(event.request)
   }
 
