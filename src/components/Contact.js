@@ -4,20 +4,20 @@ import BarLoader from "react-spinners/BarLoader";
 
 const Contact = (props) => {
 
-    const [inputs, setInputs] = useState({});
+    const [inputs, setInputs] = useState({['spinnerLoading']: false});
     const handleInputChange = (event) => {
         event.persist();
         setInputs(inputs => ({...inputs, [event.target.name]: event.target.value}));
     };
 
     let sendMessage = function () {
-        setInputs(inputs => ({...inputs, ['spinnerLoading']: true}));
+
         setInputs(inputs => ({...inputs, ['responseMessage']: ""}));
         console.log(inputs);
         if(!inputs.name || !inputs.email || !inputs.messageText) {
             return
         }
-
+        setInputs(inputs => ({...inputs, ['spinnerLoading']: true}));
         let data = {
             "name": inputs.name,
             "email": inputs.email,
