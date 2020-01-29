@@ -43,91 +43,42 @@ class HomeIndex extends React.Component {
                                 <h3>FUK</h3>
                                 <p>I fell over again</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                         <article style={{backgroundImage: `url(${grouptalk})`}}>
                             <header className="major">
                                 <h3>Chat and a natter</h3>
                                 <p>Group bonding is important</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                         <article style={{backgroundImage: `url(${bumup})`}}>
                             <header className="major">
                                 <h3>Abs</h3>
                                 <p>Check out my washboard tummy</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                         <article style={{backgroundImage: `url(${layflat})`}}>
                             <header className="major">
                                 <h3>Chill time</h3>
                                 <p>Always take time for a sleep</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                         <article style={{backgroundImage: `url(${downdog})`}}>
                             <header className="major">
                                 <h3>Bridge</h3>
                                 <p>Over troubled water</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
-                        {/*<article style={{backgroundImage: `url(${pic06})`}}>*/}
-                        {/*    <header className="major">*/}
-                        {/*        <h3>Etiam</h3>*/}
-                        {/*        <p>Feugiat amet tempus</p>*/}
-                        {/*    </header>*/}
-                        {/*    <Link to="/landing" className="link primary"></Link>*/}
-                        {/*</article>*/}
-                        <article >
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>When</th>
-                                    <th>Status</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>week 1</td>
-                                    <td>01 Jan 202</td>
-                                    <td>complete</td>
-                                </tr>
-                                <tr>
-                                    <td>week 2</td>
-                                    <td>01 Jan 202</td>
-                                    <td>complete</td>
-                                </tr>
-                                <tr>
-                                    <td>week 3</td>
-                                    <td>01 Jan 202</td>
-                                    <td>complete</td>
-                                </tr>
-                                <tr>
-                                    <td>week 4</td>
-                                    <td>01 Jan 202</td>
-                                    <td>spaces available</td>
-                                </tr>
-                                <tr>
-                                    <td>week 5</td>
-                                    <td>01 Jan 202</td>
-                                    <td>spaces available</td>
-                                </tr>
-                                <tr>
-                                    <td>week 6</td>
-                                    <td>01 Jan 202</td>
-                                    <td>spaces available</td>
-                                </tr>
-                                </tbody>
-                                {/*<tfoot>*/}
-                                {/*<tr>*/}
-                                {/*    <td colSpan="2"></td>*/}
-                                {/*    <td>100.00</td>*/}
-                                {/*</tr>*/}
-                                {/*</tfoot>*/}
-                            </table>
+                        <article style={{backgroundImage: `url(${crossleg})`}}>
+                            <header className="major">
+                                <h3>Crosslegged</h3>
+                                <p>That's me up the front</p>
+                            </header>
+                            {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                     </section>
                     {/*<section id="two">*/}

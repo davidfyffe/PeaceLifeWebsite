@@ -60,6 +60,12 @@
 					background-color: desaturate(darken(_palette(highlight), 15), 5);
 				}
 			}
+
+			img {
+				padding-top: 10px;
+				padding-bottom: 0;
+				height: inherit;
+			}
 		}
 
 		nav {
