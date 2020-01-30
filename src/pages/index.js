@@ -18,6 +18,8 @@ import layflat from '../assets/images/IMG_7235.jpg'
 import downdog from '../assets/images/IMG_7236.jpg'
 import lunge from '../assets/images/IMG_7237.jpg'
 import crossleg from '../assets/images/IMG_7238.jpg'
+import handup from '../assets/images/image2.jpeg'
+import twisty from '../assets/images/twisty.jpeg'
 
 
 class HomeIndex extends React.Component {
@@ -38,10 +40,10 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${headdown})`}}>
+                        <article style={{backgroundImage: `url(${handup})`}}>
                             <header className="major">
                                 <h3>FUK</h3>
-                                <p>I fell over again</p>
+                                <p>There's a crack in ceiling</p>
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
@@ -52,17 +54,17 @@ class HomeIndex extends React.Component {
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
-                        <article style={{backgroundImage: `url(${bumup})`}}>
+                        <article style={{backgroundImage: `url(${twisty})`}}>
                             <header className="major">
-                                <h3>Abs</h3>
-                                <p>Check out my washboard tummy</p>
+                                <h3>Eagle pose</h3>
+                                <p>Twisty</p>
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
-                        <article style={{backgroundImage: `url(${layflat})`}}>
+                        <article style={{backgroundImage: `url(${lunge})`}}>
                             <header className="major">
-                                <h3>Chill time</h3>
-                                <p>Always take time for a sleep</p>
+                                <h3>Lunge</h3>
+                                <p>I will be the twister queen</p>
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
