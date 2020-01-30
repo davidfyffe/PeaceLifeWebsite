@@ -42,22 +42,22 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${handup})`}}>
                             <header className="major">
-                                <h3>FUK</h3>
-                                <p>There's a crack in ceiling</p>
+                                <h3>Extended side angle pose</h3>
+                                <p>Gentle stretching and twists detoxify and revive</p>
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                         <article style={{backgroundImage: `url(${grouptalk})`}}>
                             <header className="major">
-                                <h3>Chat and a natter</h3>
-                                <p>Group bonding is important</p>
+                                <h3>Savasana</h3>
+                                <p>Relaxation before and after poses</p>
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
                         <article style={{backgroundImage: `url(${twisty})`}}>
                             <header className="major">
                                 <h3>Eagle pose</h3>
-                                <p>Twisty</p>
+                                <p>Focus for balancing poses</p>
                             </header>
                             {/*<Link to="/landing" className="link primary"></Link>*/}
                         </article>
