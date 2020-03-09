@@ -1,7 +1,67 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
-const Schedule = (props) => (
-    <footer id="schedule">
+const Schedule = (props) => {
+
+const months = [
+   'January',
+   'February',
+   'March',
+   'April',
+   'May',
+   'June',
+   'July',
+   'August',
+   'September',
+   'October',
+   'November',
+   'December'
+]
+
+
+    let classSchedule = [{}];
+    function setClassSchedule(d) { classSchedule = d; }
+
+    function add_weeks(dt, n) {
+        let newDate = new Date()
+        newDate.setDate(dt.getDate() + (n * 7))
+        return newDate;
+     }
+
+    let generateTable = function() {
+
+        let startDate = new Date(2020, 2, 9) //9th March
+        var i;
+        for (i = 1; i <= 6; i++) {
+
+            let newWeek = add_weeks(startDate, i - 1); //week 1 = 9th March. not 9th + 1 week.
+            classSchedule.push(
+                {
+                                week : `week ${i}`,
+                                when : `${newWeek.getDate()} ${months[newWeek.getMonth()]} ${newWeek.getFullYear()}`,
+                                status : newWeek < new Date() ? 'complete' : newWeek.getTime() == new Date().getTime() ? "tonight!" : "scheduled"
+                            }
+            )
+
+        }
+    }
+
+    generateTable();
+
+    function generateRows() {
+    return (
+        classSchedule.map((row) => (
+
+            <tr>
+                <td>{row.week}</td>
+                <td>{row.when}</td>
+                <td>{row.status}</td>
+            </tr>
+                                )
+         ))
+    }
+
+
+    return <footer id="schedule">
         <div className="inner">
             <div className="table-wrapper2">
                 <header className="major">
@@ -17,47 +77,18 @@ const Schedule = (props) => (
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>week 1</td>
-                        <td>13 Jan 2002</td>
-                        <td>complete</td>
-                    </tr>
-                    <tr>
-                        <td>week 2</td>
-                        <td>20 Jan 2002</td>
-                        <td>complete</td>
-                    </tr>
-                    <tr>
-                        <td>week 3</td>
-                        <td>27 Jan 2002</td>
-                        <td>complete</td>
-                    </tr>
-                    <tr>
-                        <td>week 4</td>
-                        <td>03 Feb 2002</td>
-                        <td>spaces available</td>
-                    </tr>
-                    <tr>
-                        <td>week 5</td>
-                        <td>10 Feb 2002</td>
-                        <td>spaces available</td>
-                    </tr>
-                    <tr>
-                        <td>week 6</td>
-                        <td>17 Feb 2002</td>
-                        <td>spaces available</td>
-                    </tr>
+
+                    {
+                        generateRows()
+                    }
+
+
                     </tbody>
-                    {/*<tfoot>*/}
-                    {/*<tr>*/}
-                    {/*    <td colSpan="2"></td>*/}
-                    {/*    <td>100.00</td>*/}
-                    {/*</tr>*/}
-                    {/*</tfoot>*/}
                 </table>
             </div>
         </div>
     </footer>
-);
+
+}
 
 export default Schedule
