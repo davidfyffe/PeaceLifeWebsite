@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-54fc26fe8608ec6ee39a.js"
+    "url": "webpack-runtime-1aa6da0c47a938d3082d.js"
   },
   {
     "url": "commons-a5accc237a4a651a8f27.js"
   },
   {
-    "url": "app-fbc9275454460998c249.js"
+    "url": "app-db6017372bdaa2922b7a.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-c1d1163580b94df298ae.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "69d253a8daf3c0580eee21a26837100e"
+    "revision": "febc7dc694626a4f6f6854510a26b6bc"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -136,12 +136,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/PeaceLifeWebsite`), ``)
+  pathname = pathname.replace(new RegExp(`^/davidfyffe`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/PeaceLifeWebsite/app-fbc9275454460998c249.js`))) {
+  if (!resources || !(await caches.match(`/davidfyffe/app-db6017372bdaa2922b7a.js`))) {
     return await fetch(event.request)
   }
 
@@ -154,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/PeaceLifeWebsite/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/davidfyffe/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
