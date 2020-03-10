@@ -1,20 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import '../assets/scss/main.scss'
 import Header from './Header'
-import Menu from './Menu'
+
 import Contact from './Contact'
 import Footer from './Footer'
 import Schedule from "./Schedule";
 
 class Layout extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             isMenuVisible: false,
             loading: 'is-loading'
-        }
+        };
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
     }
 
@@ -37,7 +36,7 @@ class Layout extends React.Component {
     }
 
     render() {
-        const { children } = this.props
+        const { children } = this.props;
 
         return (
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
@@ -48,7 +47,6 @@ class Layout extends React.Component {
                     <Contact />
                     <Footer />
                 </div>
-                <Menu onToggleMenu={this.handleToggleMenu} />
             </div>
         )
     }
