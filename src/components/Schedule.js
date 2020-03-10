@@ -55,7 +55,8 @@ const Schedule = () => {
             ))
     }
 
-    return <footer id="schedule">
+    return <section id="schedule">
+        <footer id="schedule">
         <div className="inner">
             <div className="table-wrapper2">
                 <header className="major">
@@ -79,7 +80,7 @@ const Schedule = () => {
             </div>
         </div>
     </footer>
-
+    </section>
 };
 
 export default Schedule

@@ -24,7 +24,7 @@ const Banner = (props) => (
                     <br />Namaste
 <br />Diana</p>
                 <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Jump to class schedule</a></li>
+                    <li><a href="#schedule" className="button next scrolly">Jump to class schedule</a></li>
                 </ul>
             </div>
         </div>
