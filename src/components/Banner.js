@@ -1,4 +1,5 @@
 import React from 'react'
+import profilePic from '../assets/images/DianaProfile1.png'
 
 const Banner = (props) => (
     <section id="banner" className="major">
@@ -7,7 +8,7 @@ const Banner = (props) => (
                 <h2>Welcome to Peacelife Yoga</h2>
             </header>
             <div className="content">
-
+                <span className="image left"><img src={profilePic} alt="" /></span>
 <p>Hello my name is Diana and I am a trainee yoga teacher and founder of Peacelife Yoga.
 <br />
 I am half way through my teaching and have started putting all that I am learning into practice by offering small down to earth beginners yoga classes above Ronnies on the Belmont Road.

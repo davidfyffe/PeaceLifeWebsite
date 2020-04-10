@@ -20,7 +20,7 @@ const Schedule = () => {
     let classSchedule = [{}];
 
     function add_weeks(dt, n) {
-        let newDate = new Date();
+        let newDate = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
         newDate.setDate(dt.getDate() + (n * 7));
         return newDate;
     }
@@ -28,7 +28,7 @@ const Schedule = () => {
     let generateTable = function () {
         let startDate = new Date(2020, 2, 9); //9th March
         var i;
-        for (i = 1; i <= 6; i++) {
+        for (i = 1; i <= 8; i++) {
             let newWeek = add_weeks(startDate, i - 1); //week 1 = 9th March. not 9th + 1 week.
             classSchedule.push(
                 {
@@ -61,7 +61,12 @@ const Schedule = () => {
             <div className="table-wrapper2">
                 <header className="major">
                     <h3>Class Schedule</h3>
+                    <br/>
                     <p>Upcoming class dates</p>
+                    <p>Due to COVID-19 in person classes are cancelled for the time being.</p>
+                    <p>Good news is that I am running virtual classes via the meeting app Zoom on the same weekly schedule. </p>
+                    <p>Contact me below or by social media for meeting details.</p>
+                    <p></p>
                 </header>
                 <table>
                     <thead>
