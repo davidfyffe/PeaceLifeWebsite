@@ -61,13 +61,15 @@ const Schedule = () => {
             <div className="table-wrapper2">
                 <header className="major">
                     <h3>Class Schedule</h3>
-                    <br/>
-                    <p>Upcoming class dates</p>
-                    <p>Due to COVID-19 in person classes are cancelled for the time being.</p>
-                    <p>Good news is that I am running virtual classes via the meeting app Zoom on the same weekly schedule. </p>
-                    <p>Contact me below or by social media for meeting details.</p>
-                    <p></p>
+
                 </header>
+
+                <div className="content">
+                <p>Upcoming class dates</p>
+                <p>Due to COVID-19 in person classes are cancelled for the time being.
+                Good news is that I am running virtual classes via the meeting app Zoom on the same weekly schedule. </p>
+                <p>Contact me below or by social media for meeting details.</p>
+                </div>
                 <table>
                     <thead>
                     <tr>
