@@ -66,7 +66,7 @@ class HomeIndex extends React.Component {
                         <article style={{backgroundImage: `url(${diCert})`}}>
                             <header className="major">
                                 <h3>Yoga Alliance Professional</h3>
-                                <p>Half way through</p>
+                                <p>Half way through my teaching training journey</p>
                             </header>
                         </article>
                     </section>

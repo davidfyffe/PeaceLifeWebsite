@@ -4,18 +4,18 @@ const Banner = (props) => (
     <section id="banner" className="major">
         <div className="inner">
             <header className="major">
-                {/* <h1>Hi, my name is Diana</h1> */}
                 <h2>Welcome to Peacelife Yoga</h2>
             </header>
             <div className="content">
-                
-<p>Hi my name is Diana
+
+<p>Hello my name is Diana and I am a trainee yoga teacher and founder of Peacelife Yoga.
 <br />
-I am half way through my 200 hour yoga teacher training with Yoga Alliance Professionals (YAP). 
+I am half way through my teaching and have started putting all that I am learning into practice by offering small down to earth beginners yoga classes above Ronnies on the Belmont Road.
+<br/>
+This is a beautiful space with a really tranquil atmosphere. I also offer small private group sessions which can be tailored to your needs.
 <br />
-I have started to put my knowledge into practice by offering small down to earth beginners yoga classes at reduced rates above Ronnies on the Belmont Road, East Belfast. 
 <br />
-I also offer small private group sessions. Check out my class schedule below for current classes or drop me a message.
+So go on.... take some time out for yourself and step into the wonderful world of yoga, the benefits are endless - drop me a message to book.
 <br />
 *please note pre booking is essential
 <br />
