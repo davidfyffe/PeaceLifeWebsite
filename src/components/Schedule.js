@@ -26,7 +26,7 @@ const Schedule = () => {
     }
 
     let generateTable = function () {
-        let startDate = new Date(2020, 2, 9); //9th March
+        let startDate = new Date(2020, 8, 7); //9th March
         var i;
         for (i = 1; i <= 8; i++) {
             let newWeek = add_weeks(startDate, i - 1); //week 1 = 9th March. not 9th + 1 week.
@@ -66,9 +66,10 @@ const Schedule = () => {
 
                 <div className="content">
                 <p>Upcoming class dates</p>
-                <p>Due to COVID-19 in person classes are cancelled for the time being.
-                Good news is that I am running virtual classes via the meeting app Zoom on the same weekly schedule. </p>
-                <p>Contact me below or by social media for meeting details.</p>
+                <p>
+                In person classes have resumed in MAITRI Studio. East Belfast.
+                Contact me below or by social media for meeting details.
+                </p>
                 </div>
                 <table>
                     <thead>

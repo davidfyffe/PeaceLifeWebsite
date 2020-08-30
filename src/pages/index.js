@@ -9,7 +9,7 @@ import handup from '../assets/images/image2.jpeg'
 import twisty from '../assets/images/twisty.jpeg'
 import savasana from '../assets/images/SavasnaOther.jpeg'
 import diCert from '../assets/images/DiCert_crop.jpeg'
-
+import yogaAlliance from '../assets/images/membership-stamp---Accredited.png'
 
 class HomeIndex extends React.Component {
     render() {
@@ -64,7 +64,10 @@ class HomeIndex extends React.Component {
                         <article style={{backgroundImage: `url(${diCert})`}}>
                             <header className="major">
                                 <h3>Yoga Alliance Professional</h3>
-                                <p>Half way through my teaching training journey</p>
+                                <p></p>
+                                <a href="https://www.yogaallianceprofessionals.org/search_results?q=Diana%20Fyffe">
+                                <span className="image left"><img src={yogaAlliance} alt="" /></span>
+                                </a>
                             </header>
                         </article>
                     </section>
