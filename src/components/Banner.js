@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from '../assets/images/DianaProfile1.png'
+import profilePic from '../assets/images/DianaOnTable.png'
 
 const Banner = (props) => (
     <section id="banner" className="major">

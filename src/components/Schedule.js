@@ -26,7 +26,7 @@ const Schedule = () => {
     }
 
     let generateTable = function () {
-        let startDate = new Date(2020, 8, 7); //9th March
+        let startDate = new Date(2020, 10, 16); //9th March
         var i;
         for (i = 1; i <= 8; i++) {
             let newWeek = add_weeks(startDate, i - 1); //week 1 = 9th March. not 9th + 1 week.
@@ -65,26 +65,33 @@ const Schedule = () => {
                 </header>
 
                 <div className="content">
-                <p>Upcoming class dates</p>
                 <p>
-                In person classes have resumed in MAITRI Studio. East Belfast.
-                Contact me below or by social media for meeting details.
+                Classes have moved to Zoom until after Christmas.
+                </p>
+                <p>
+                <header className="major">
+                    <h4>
+                    Mondays 6:30pm - 7:30pm
+                    </h4>
+                </header>
+                Join me on Monday nights for a class that will help promote space in the body and the mind setting you up for the week ahead.
+                <p/>
+                <header className="major">
+                    <h4>
+                        Fridays 12:05pm to 12:50pm
+                    </h4>
+                </header>
+                Friday lunchtime class is a mellow flow lasting 45 minutes aimed at winding down for the weekend.
+
+                <p/>
+                Both classes are suitable for beginners or more experienced yogis.
+                All you will need is a device such as a laptop or tablet to access Zoom and a yoga mat.
+                </p>
+                <p>
+                Contact me below or by social media to reserve a place or if you have any questions please get in touch.
                 </p>
                 </div>
-                <table>
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>When</th>
-                        <th>Status</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
-                        generateRows()
-                    }
-                    </tbody>
-                </table>
+
             </div>
         </div>
     </footer>
