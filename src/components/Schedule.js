@@ -66,7 +66,7 @@ const Schedule = () => {
 
                 <div className="content">
                 <p>
-                Classes have moved to Zoom until after Christmas.
+                Classes are currently on Zoom.
                 </p>
                 <p>
                 <header className="major">
@@ -76,15 +76,8 @@ const Schedule = () => {
                 </header>
                 Join me on Monday nights for a class that will help promote space in the body and the mind setting you up for the week ahead.
                 <p/>
-                <header className="major">
-                    <h4>
-                        Fridays 12:05pm to 12:50pm
-                    </h4>
-                </header>
-                Friday lunchtime class is a mellow flow lasting 45 minutes aimed at winding down for the weekend.
 
                 <p/>
-                Both classes are suitable for beginners or more experienced yogis.
                 All you will need is a device such as a laptop or tablet to access Zoom and a yoga mat.
                 </p>
                 <p>
