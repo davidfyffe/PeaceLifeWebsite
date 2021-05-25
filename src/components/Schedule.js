@@ -46,48 +46,46 @@ const Schedule = () => {
         return (
             classSchedule.map((row) => (
 
-                    <tr>
-                        <td>{row.week}</td>
-                        <td>{row.when}</td>
-                        <td>{row.status}</td>
-                    </tr>
-                )
+                <tr>
+                    <td>{row.week}</td>
+                    <td>{row.when}</td>
+                    <td>{row.status}</td>
+                </tr>
+            )
             ))
     }
 
     return <section id="schedule">
         <footer id="schedule">
-        <div className="inner">
-            <div className="table-wrapper2">
-                <header className="major">
-                    <h3>Class Schedule</h3>
-
-                </header>
-
+            <div className="inner">
+                <div className="table-wrapper2">
+                    <header className="major">
+                        <h3>Class Schedule</h3>
+                    </header>
                 <div className="content">
-                <p>
-                Classes are currently on Zoom.
-                </p>
-                <p>
-                <header className="major">
-                    <h4>
-                    Mondays 6:30pm - 7:30pm
-                    </h4>
-                </header>
-                Join me on Monday nights for a class that will help promote space in the body and the mind setting you up for the week ahead.
-                <p/>
+                   
+                    <p>
+                        <header className="major">
+                        <h4>
+                            Mondays 6:15pm - 7:15pm @ Maitri Studio Belfast
+                        </h4>
+                        </header>
 
-                <p/>
-                All you will need is a device such as a laptop or tablet to access Zoom and a yoga mat.
-                </p>
-                <p>
-                Contact me below or by social media to reserve a place or if you have any questions please get in touch.
-                </p>
+                        Join me on Monday nights for a class that will help promote space in the body and the mind setting you up for the week ahead.
+                        Suitable for beginners and more experianced yogis.
+                        <p />
+                        <div>
+                        <p />
+                        New five week block of classes starting 7th June - 5th July.
+                        <p />
+                        Cost £35, Contact me below to reserve a place or if you have any questions.
+                        </div>
+                    </p>
                 </div>
 
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </section>
 };
 
