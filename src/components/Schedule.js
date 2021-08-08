@@ -76,9 +76,9 @@ const Schedule = () => {
                         <p />
                         <div>
                         <p />
-                        New five week block of classes starting 7th June - 5th July.
+                        New six week block of classes starting 6th September.
                         <p />
-                        Cost £35, Contact me below to reserve a place or if you have any questions.
+                        Cost £42, Contact me below to reserve a place or if you have any questions.
                         </div>
                     </p>
                 </div>
