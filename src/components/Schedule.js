@@ -67,7 +67,7 @@ const Schedule = () => {
                     <p>
                         <header className="major">
                         <h4>
-                            Mondays 6:15pm - 7:15pm @ Maitri Studio Belfast
+                            Mondays 6:15pm - 7:15pm @ Maitri Studio, East Belfast
                         </h4>
                         </header>
 
@@ -75,17 +75,51 @@ const Schedule = () => {
                         Suitable for beginners and more experianced yogis.
                         <p />
                         <div>
-                        <p />
-                        New six week block of classes starting 6th September.
-                        <p />
-                        Cost £42, Contact me below to reserve a place or if you have any questions.
+                        
+                        Monday night sessions are now fully booked - new block starting 1st November 2021.
                         </div>
+                    </p>
+                    <br/>
+                    <p>
+                        <header className="major">
+                        <h4>
+                            Mondays 10:00am - 11:00am @ The Den Studio, South Belfast
+                        </h4>
+                        </header>
+
+                        Monday morning class suitable for beginners. These classes are accessible to all regardless of experiance or ability.
+                        Each week we will explore moving the body within our own unique limits; incorporating our breath into our movements and introduce a little bit of stillness to the mind.
+
+                        <p />
+                        <div>
+                        <p />
+                        New four week block of classes starting 4th October.
+                        <p />
+                        Cost £36 for the full block of classes or £10 per class. Students £8 with valid student card.
+                        </div>
+                    </p>
+                    
+                    <br/>
+                    <p>
+                        <header className="major">
+                        <h4>
+                            Mum and baby Yoga starting in November
+                        </h4>
+                        </header>
+                        Get in touch for more details.
                     </p>
                 </div>
 
                 </div>
+                <ul className="actions">
+                        
+                    <li><a href="https://bookwhen.com/peacelifeyoga" className="button special">Book Now</a></li>
+                        
+                </ul>
             </div>
+            
         </footer>
+
     </section>
 };
 

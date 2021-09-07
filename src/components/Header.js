@@ -7,7 +7,7 @@ const Header = () => (
     <header id="header" className="alt">
         <div className="logo">
             <img src={SmallLogo_icon} alt="" />
-            <strong>Peacelife</strong>Yoga
+            {/* <strong>Peacelife</strong>Yoga */}
             </div>
         <link rel="apple-touch-icon" href="/src/assets/images/SmallLogo_icon.png" />
 
