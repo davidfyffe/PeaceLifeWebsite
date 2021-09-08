@@ -15,12 +15,11 @@ const Banner = (props) => (
 I offer down to earth beginners yoga classes at <a href="https://maitristudio.net/">Maitri Studio</a> in East Belfast, and <a href="https://www.theden.yoga/">the den</a> South Belfast, classes are ideal for anyone stepping on the mat for the first time or returning to yoga after a break.
 <br/>
 <br/>
-In my classes I aim to create a tranquil atmosphere where you can switch off from the outside world. I can offer small private group sessions which can be tailored to your needs,
-and in the near future I will also be running mindfulness classes.
+In my classes I aim to create a tranquil atmosphere where you can switch off from the outside world.
 <br />
-So go on.... take some time out for yourself and step into the wonderful world of yoga, the benefits are endless - drop me a message to book.
+So go on.... take some time out for yourself and step into the wonderful world of yoga, the benefits are endless.
 <br />
-*please note pre booking is essential
+*please note pre booking is essential  
 <br />
 <br />
 **New!!  Mum and Baby Yoga classes coming to Belmont Church Tower, East Belfast in November.
