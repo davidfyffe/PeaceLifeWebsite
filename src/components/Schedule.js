@@ -66,48 +66,17 @@ const Schedule = () => {
                    
                     <p>
                         <header className="major">
-                        <h4>
-                            Mondays 6:15pm - 7:15pm @ Maitri Studio, East Belfast
-                        </h4>
-                        </header>
-
-                        Join me on Monday nights for a class that will help promote space in the body and the mind setting you up for the week ahead.
-                        Suitable for beginners and more experianced yogis.
-                        <p />
-                        <div>
                         
-                        Monday night sessions are now fully booked - new block starting 1st November 2021.
-                        </div>
-                    </p>
-                    <br/>
-                    <p>
-                        <header className="major">
-                        <h4>
-                            Mondays 10:00am - 11:00am @ The Den Studio, South Belfast
-                        </h4>
                         </header>
 
-                        Monday morning class suitable for beginners. These classes are accessible to all regardless of experiance or ability.
-                        Each week we will explore moving the body within our own unique limits; incorporating our breath into our movements and introduce a little bit of stillness to the mind.
+                        Currently teaching beginner, mixed level classes and mum and baby yoga.
 
-                        <p />
-                        <div>
-                        <p />
-                        New four week block of classes starting 4th October.
-                        <p />
-                        Cost £36 for the full block of classes or £10 per class. Students £8 with valid student card.
-                        </div>
+                        <p /> 
+                        Click book now for class details or drop me a message.  
                     </p>
+                    <br/>
                     
-                    <br/>
-                    <p>
-                        <header className="major">
-                        <h4>
-                            Mum and baby Yoga starting in November
-                        </h4>
-                        </header>
-                        Get in touch for more details.
-                    </p>
+                    
                 </div>
 
                 </div>
