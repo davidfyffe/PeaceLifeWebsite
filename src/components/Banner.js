@@ -15,9 +15,9 @@ const Banner = (props) => (
 I offer down to earth yoga classes in East Belfast.
  Classes are ideal for anyone stepping on the mat for the first time or returning to yoga after a break.
 <br/>
-<br />
-Mum and Baby Yoga classes coming to Belmont Church Tower.
-Please get in touch for more details. 
+<br /><strong>
+I am also delighted to be offering Parent and Baby Yoga classes in Belmont Church Tower, East Belfast.
+</strong> 
 
 </p>
 
