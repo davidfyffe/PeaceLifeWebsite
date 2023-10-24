@@ -25,7 +25,7 @@ const Contact = (props) => {
         };
         axios({
             method: 'post',
-            url: ' https://1cqeyrda0i.execute-api.eu-west-2.amazonaws.com/prod/contact',
+            url: ' https://686fzr2lw3.execute-api.eu-west-2.amazonaws.com/contact',
             responseType: 'text',
             data: data
         }).then(response => {
